@@ -17,12 +17,12 @@ def main():
         all_cleaned_measurements, OXYGEN_RATING_OPTION)
     filtered_list_by_CO2 = filter_list_by_criteria(
         all_cleaned_measurements, CO2_RATING_OPTION)
+
     oxygen_rating_result = utils.calculate_number_in_base(
         filtered_list_by_oxigen[0], BINARY_BASE)
     co2_rating_result = utils.calculate_number_in_base(
         filtered_list_by_CO2[0], BINARY_BASE)
-    print(oxygen_rating_result, filtered_list_by_oxigen[0])
-    print(co2_rating_result, filtered_list_by_CO2[0])
+
     print(oxygen_rating_result * co2_rating_result)
 
 
